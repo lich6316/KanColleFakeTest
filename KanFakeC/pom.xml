@@ -106,6 +106,35 @@
       <version>${spring.version}</version>
     </dependency>
 
+    <!--Spring web portlet-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc-portlet</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <!--Spring WebSocket-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-websocket</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <!--Spring jms-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jms</artifactId>
+      <version>4.3.14.RELEASE</version>
+    </dependency>
+
+    <!--Spring messaging-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-messaging</artifactId>
+      <version>4.3.14.RELEASE</version>
+    </dependency>
+
+
     <!--junit-->
     <dependency>
       <groupId>junit</groupId>
@@ -187,6 +216,8 @@
         </exclusion>
       </exclusions>
     </dependency>
+
+
   </dependencies>
 
 
