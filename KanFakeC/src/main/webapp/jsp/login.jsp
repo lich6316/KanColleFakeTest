@@ -10,7 +10,7 @@
 <html>
 <head>
   <title>Title</title>
-  <script type="text/javascript" src="${pageContext.request.contextPath}/statics/js/jquery-3.2.1.js"></script>
+  <script type="text/javascript" src="../statics/js/jquery-3.2.1.js"></script>
   <%--<script type="text/javascript" src="statics/js/login.js"></script>--%>
 </head>
 <body>
