@@ -1,6 +1,7 @@
 /.iml
 *.iml
 /target
+/out
 # Compiled class file
 *.class
 
