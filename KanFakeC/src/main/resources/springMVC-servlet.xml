@@ -6,18 +6,17 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="
             http://www.springframework.org/schema/beans
-            http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+            http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
             http://www.springframework.org/schema/context
-            http://www.springframework.org/schema/context/spring-context-3.2.xsd
+            http://www.springframework.org/schema/context/spring-context-4.0.xsd
             http://www.springframework.org/schema/mvc
-            http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
-            http://www.springframework.org/schema/util
-            http://www.springframework.org/schema/util/spring-util-3.2.xsd">
+            http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
   <!-- 开启注解 -->
-
   <context:component-scan base-package="com.kanfake.controller" />
   <mvc:annotation-driven />
-  <mvc:resources location="/statics/" mapping="/statics/**" />
+  <!--静态资源处理-->
+  <mvc:resources mapping="/statics/**" location="/statics" />
+
   <!-- SpringMVC默认视图解析器 -->
   <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
     <property name="prefix" value="/" />

@@ -1,6 +1,7 @@
 package com.kanfake.controller;
 
 import com.kanfake.service.UserService;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -12,6 +13,7 @@ import javax.annotation.Resource;
  * @author Tiamat
  *
  * */
+@Controller
 @RequestMapping(value = "/usr")
 public class UserController {
     /**
@@ -24,10 +26,9 @@ public class UserController {
      * asynchronous login check
      *
      * */
-    @RequestMapping(value = "/login",method = RequestMethod.POST)
+    @RequestMapping(value = "/loginChk",method = RequestMethod.POST)
     @ResponseBody
     public String toSearch(/*input User*/){
-        //check user-info,success -> home,erro -> login
-        return "home";
+        return "true";
     }
 }

@@ -10,8 +10,8 @@
 <html>
 <head>
   <title>Title</title>
-  <script type="text/javascript" src="../statics/js/jquery-3.2.1.js"></script>
-  <script type="text/javascript" src="../statics/js/login.js"></script>
+  <script type="text/javascript" src="${pageContext.request.contextPath}/statics/js/jquery-3.2.1.js"></script>
+  <%--<script type="text/javascript" src="statics/js/login.js"></script>--%>
 </head>
 <body>
   <div class="top">
@@ -22,11 +22,11 @@
       <table>
         <tr>
           <td>用户名：</td>
-          <td><input type="text" name="userId"></td>
+          <td><input type="text" name="userId" id="userId"></td>
         </tr>
         <tr>
           <td>密码：</td>
-          <td><input type="password" name="password"></td>
+          <td><input type="password" name="password" id="password"></td>
         </tr>
         <tr>
           <td colspan="2">
@@ -37,7 +37,7 @@
         </tr>
         <tr>
           <td>
-            <input type="button" value="登录">
+            <input type="button" value="登录" id="loginButton">
           </td>
           <td>
             <input type="button" value="注册">
