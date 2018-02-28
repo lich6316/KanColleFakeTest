@@ -12,6 +12,7 @@
     <tomcat.version>8.5.23</tomcat.version>
     <!--jstl version-->
     <jstl.version>1.2</jstl.version>
+    <!--spring version-->
     <spring.version>4.3.14.RELEASE</spring.version>
   </properties>
   <dependencies>
@@ -215,6 +216,22 @@
           <artifactId>jsp-api</artifactId>
         </exclusion>
       </exclusions>
+    </dependency>
+    <!--log4j-->
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.17</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.25</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.7.25</version>
     </dependency>
 
 
